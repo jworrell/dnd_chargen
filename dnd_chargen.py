@@ -57,7 +57,7 @@ def roll_stats(key):
     character = load_character(key)
 
     if character["state"] != "new":
-        raise ValueError("Invalid state for this operation!")
+        return flask.redirect(flask.url_for("dnd_chargen.hub", key=key))
 
     return flask.render_template("roll_stats.html",
                                  character=character,
@@ -70,7 +70,7 @@ def do_roll_stats(key):
     character = load_character(key)
 
     if character["state"] != "new":
-        raise ValueError("Invalid state for this operation!")
+        return flask.redirect(flask.url_for("dnd_chargen.hub", key=key))
 
     character.roll_stats()
     character.set_state("has-stats")
@@ -85,7 +85,7 @@ def pick_class(key):
     character = load_character(key)
 
     if character["state"] != "has-stats":
-        raise ValueError("Invalid state for this operation!")
+        return flask.redirect(flask.url_for("dnd_chargen.hub", key=key))
 
     return flask.render_template("pick_class.html",
                                  character=character,
@@ -98,7 +98,7 @@ def do_pick_class(key):
     character = load_character(key)
 
     if character["state"] != "has-stats":
-        raise ValueError("Invalid state for this operation!")
+        return flask.redirect(flask.url_for("dnd_chargen.hub", key=key))
 
     character.set_class(flask.request.form["character_class"])
     character.set_saves()
@@ -114,7 +114,7 @@ def roll_hp_and_gear(key):
     character = load_character(key)
 
     if character["state"] != "has-class":
-        raise ValueError("Invalid state for this operation!")
+        return flask.redirect(flask.url_for("dnd_chargen.hub", key=key))
 
     return flask.render_template("roll_hp_and_gear.html",
                                  character=character,
@@ -127,7 +127,7 @@ def do_roll_hp_and_gear(key):
     character = load_character(key)
 
     if character["state"] != "has-class":
-        raise ValueError("Invalid state for this operation!")
+        return flask.redirect(flask.url_for("dnd_chargen.hub", key=key))
 
     character.roll_hp()
     character.roll_equipment()
