@@ -1,0 +1,67 @@
+cleric,3: cudgel, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, wooden cross, 4 GP
+cleric,4: cudgel, shield, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, wooden cross, 4 GP
+cleric,5: mace, leather armor, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, wooden cross, 5 GP
+cleric,6: quarter-staff, leather armor, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, 12 iron spikes, wooden cross, 3 stakes & mallet, steel mirror, 10 GP
+cleric,7: chain armor, war hammer, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, wooden cross, 2 small sacks, 8 GP
+cleric,8: chain armor, shield, mace, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, wooden cross, 2 small sacks, 8 GP
+cleric,9: chain armor, shield, war hammer, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, wooden cross, 2 small sacks, 3 stakes & mallet, steel mirror, 10 GP
+cleric,10: plate armor, shield, mace, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, wooden cross, 10 GP
+cleric,11: plate armor, shield, war hammer, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 10' pole, wooden cross, small sack, 2 GP
+cleric,12: plate armor, quarter-staff, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 50' rope, silver cross, 4 GP
+cleric,13: cudgel, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, wooden cross, scroll, 4 GP
+cleric,14: plate armor, shield, mace, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 50' rope, silver cross, 10 GP
+cleric,15: leather armor, mace, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, wooden cross, scroll, 2 flasks oil, 1 GP
+cleric,16: plate armor, shield, helmet, war hammer, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 50' rope, silver cross, 3 stakes & mallet, steel mirror, 12 GP
+cleric,17: chain armor, war hammer, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, wooden cross, scroll, 10 GP
+cleric,18: plate armor, shield, helmet, mace, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 50' rope, silver cross, vial holy water, 12 iron spikes, 3 stakes & mallet, small sack, 10 GP
+
+fighter,3: spear, dagger, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, 3 GP
+fighter,4: cudgel, leather armor, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, 1 GP
+fighter,5: leather armor, morning star, dagger, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, 3 GP
+fighter,6: leather armor, battle axe, hand axe, dagger, sling, pouch with 20 sling bullets, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, 7 GP
+fighter,7: chain armor, spear, dagger, sling, pouch with 20 sling bullets, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, 11 GP
+fighter,8: chain armor, shield, sword, dagger, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, 4 GP
+fighter,9: chain armor, spear, light crossbow, case with 30 quarrels, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, 11 GP
+fighter,10: plate armor, shield, sword, dagger, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, 4 GP
+fighter,11: plate armor, two-handed sword, 3 daggers, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, 2 flasks oil, 9 GP
+fighter,12: plate armor, shield, sword, light crossbow, case with 30 quarrels, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, 2 GP
+fighter,13: plate armor, flail, dagger, 35 short bow, quiver of 20 arrows, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, small sack, 10 GP
+fighter,14: plate armor, shield, sword, light crossbow, case with 30 quarrels, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 10' pole, 5 GP
+fighter,15: plate armor, helmet, 2 battle axes, dagger, light crossbow, case with 30 quarrels, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, 5 flasks oil, 15 GP
+fighter,16: plate armor, two-handed sword, dagger, short bow, quiver of 20 arrows, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 10' pole, 2 small sacks, 15 GP
+fighter,17: plate armor, halberd, dagger, long bow, quiver of 20 arrows, 2 silver tipped arrows, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 50' rope, 10 GP
+fighter,18: plate armor, shield, helmet, sword, 2 daggers, light crossbow, case with 30 quarrels, 4 silver tipped quarrels, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 10' pole, 9 GP
+
+magic-user,3: dagger, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, 4 GP
+magic-user,4: 2 daggers, 6 torches, backpack, waterskin, 1 week iron rations, 2 flasks oil, 50' rope, 7 GP
+magic-user,5: dagger, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 10' pole, 7 GP
+magic-user,6: dagger, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, vial of holy water, 9 GP
+magic-user,7: dagger, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole 5 flasks of oil, silver mirror, belladona, 9 GP
+magic-user,8: dagger, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, 2 vials holy water, 4 GP
+magic-user,9: 3 daggers, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 10' pole, vial of holy water, 16 GP
+magic-user,10: dagger, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, 2 vials holy water, 24 GP
+magic-user,11: dagger, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 10' pole, 67 GP
+magic-user,12: dagger, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 50' rope, 77 GP
+magic-user,13: dagger, 6 torches, backpack, waterskin, 1 week iron rations, scroll, 10' pole, 4 GP
+magic-user,14: 2 daggers, 6 torches, backpack, waterskin, 1 week iron rations, scroll, 50' rope, 11 GP
+magic-user,15: dagger, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, scroll, 10' pole, 7 G
+magic-user,16: dagger, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, scroll, 50' rope, 17 GP
+magic-user,17: dagger, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, scroll, 10' pole, 27 GP
+magic-user,18: dagger, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, scroll, 50' rope, 37 GP
+
+thief,3: cudgel, sling, pouch with 20 sling bullets, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, 4 GP
+thief,4: cudgel, leather armor, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, 1 GP
+thief,5: cudgel, dagger, sling, pouch with 20 sling bullets, leather armor, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, 6 GP
+thief,6: sword, dagger, leather armor, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, 9 GP
+thief,7: cudgel, light crossbow, case with 30 quarrels, leather armor, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, 6 GP
+thief,8: sword, light crossbow, case of 30 quarrels, leather armor, 6 torches, backpack, waterskin, 1 week iron rations, 10' pole, 7 GP
+thief,9: sword, 2 daggers, short bow, quiver of 20 arrows, leather armor, 6 torches, backpack, waterskin, 1 week iron rations, 50' rope, 1 GP
+thief,10: sword, dagger, leather armor, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 10' pole, 32 GP
+thief,11: sword, light crossbow, case of 30 quarrels, 2 silver tipped quarrels, leather armor, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 50' rope, 10 GP
+thief,12: sword, dagger, short bow, quiver of 20 arrows, leather armor, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 10' pole, 17 GP
+thief,13: sword, leather armor, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 50' rope, 65 GP
+thief,14: sword, light crossbow, case of 30 quarrels, 6 silver tipped quarrels, leather armor, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 10' pole, 20 GP
+thief,15: sword, short bow, quiver of 20 arrows, 6 silver tipped arrows, leather armor, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 50' rope, 20 GP
+thief,16: sword, 4 daggers, leather armor, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 10' pole, 98 GP
+thief,17: sword, light crossbow, case of 30 quarrels, leather armor, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 50' rope, 80 GP
+thief,18: sword, 3 daggers, short bow, quiver of 20 arrows, 8 silver tipped arrows, leather armor, backpack, waterskin, lantern, 4 flasks oil, 1 week iron rations, 10' pole, 31 GP

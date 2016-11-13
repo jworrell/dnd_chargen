@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ character.name }}</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Name:</th>
+            <td>{{ render_stat(character.name) }}</td>
+            <th>Class:</th>
+            <td>{{ render_stat(character.class) }}</td>
+            <th>HP:</th>
+            <td>{{ render_stat(character.hit_points) }}</td>
+        </tr>
+    </table>
+    <table  border="1">
+        <tr>
+            <th colspan="2">Stats</th>
+            <th colspan="2">Saves</th>
+        </tr>
+        <tr>
+            <td>STR</td>
+            <td>{{ render_stat(character.strength) }} ({{ character.get_mod_text("strength") }})</td>
+            <td>Death Ray or Poison</td>
+            <td>{{ render_stat(character.poison) }}</td>
+        </tr>
+        <tr>
+            <td>DEX</td>
+            <td>{{ render_stat(character.dexterity) }} ({{ character.get_mod_text("dexterity") }})</td>
+            <td>Magic Wands</td>
+            <td>{{ render_stat(character.wands) }}</td>
+        </tr>
+        <tr>
+            <td>CON</td>
+            <td>{{ render_stat(character.constitution) }} ({{ character.get_mod_text("constitution") }})</td>
+            <td>Paralysis or Turn To Stone</td>
+            <td>{{ render_stat(character.paralysis) }}</td>
+        </tr>
+        <tr>
+            <td>INT</td>
+            <td>{{ render_stat(character.intelligence) }} ({{ character.get_mod_text("intelligence") }})</td>
+            <td>Dragon Breath</td>
+            <td>{{ render_stat(character.breath) }}</td>
+        </tr>
+        <tr>
+            <td>WIS</td>
+            <td>{{ render_stat(character.wisdom) }} ({{ character.get_mod_text("wisdom") }})</td>
+            <td>Death Ray or Poison</td>
+            <td>{{ render_stat(character.poison) }}</td>
+        </tr>
+        <tr>
+            <td>CHR</td>
+            <td>{{ render_stat(character.charisma) }} ({{ character.get_mod_text("charisma") }})</td>
+            <td>Rods, Staves, or Spells</td>
+            <td>{{ render_stat(character.spells) }}</td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <th colspan="13">To Hit Roll vs AC</th>
+        </tr>
+        <tr>
+            {% for ac in range(9, -4, -1) %}
+            <td>{{ ac }}</td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for th in character.get_to_hits(9, -3) %}
+            <td>{{ th }}</td>
+            {% endfor %}
+        </tr>
+    </table>
+    {% if character.equipment %}
+        Equipment
+        <ul>
+        {% for item in character.equipment %}
+            <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

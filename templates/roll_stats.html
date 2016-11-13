@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roll Stats</title>
+</head>
+<body>
+    <div>
+        {% include "character.html" %}
+    </div>
+    <div>
+        <form action="{{ submit_url }}" method="POST">
+            <button type="submit">Roll Stats!</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Characters</title>
+</head>
+<body>
+    <ul>
+    {% for character, link in items %}
+            <li><a href="{{ link }}">{{ character.name }}</a></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

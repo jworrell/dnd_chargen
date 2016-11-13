@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pick Class</title>
+</head>
+<body>
+    <div>
+        {% include "character.html" %}
+    </div>
+    <div>
+        <form action="{{ submit_url }}" method="POST">
+            <p>
+                <label>Name</label>
+                <input name="name" type="text"/>
+                <select name="character_class">
+                    {% for character_class in character.VALID_CLASSES|sort %}
+                        <option>{{ character_class }}</option>
+                    {% endfor %}
+                </select>
+            </p>
+            <p>
+                <button type="submit">Choose Class!</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

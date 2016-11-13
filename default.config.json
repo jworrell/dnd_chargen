@@ -1,0 +1,4 @@
+{
+  "data_root": "/path/to/sheet/directory",
+  "equipment_file": "/path/to/equipment.txt"
+}
