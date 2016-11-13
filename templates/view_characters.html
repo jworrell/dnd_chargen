@@ -5,10 +5,14 @@
     <title>View Characters</title>
 </head>
 <body>
-    <ul>
-    {% for character, link in items %}
-            <li><a href="{{ link }}">{{ character.name }}</a></li>
-    {% endfor %}
-    </ul>
+    <table border="1">
+        {% for character, link in items %}
+            <tr>
+                <td>{{ character.state }}</td>
+                <td>{{ character.name }}</td>
+                <td><a href="{{ link }}">View Sheet</a></td>
+            </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>
