@@ -1,3 +1,14 @@
+{% macro stat_select(name) %}
+    <select name="{{ name }}">
+        <option selected="1">NO</option>
+        <option>str</option>
+        <option>dex</option>
+        <option>con</option>
+        <option>int</option>
+        <option>wis</option>
+        <option>chr</option>
+    </select>
+{% endmacro %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +22,11 @@
     <div>
         <form action="{{ submit_url }}" method="POST">
             <p>
+                <p>Would like you to swap two stats?
+                <label>Swap:</label>
+                {{ stat_select("left-stat") }}
+                <label>with:</label>
+                {{ stat_select("right-stat") }}</p>
                 <label>Name</label>
                 <input name="name" type="text"/>
                 <select name="character_class">

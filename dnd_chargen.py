@@ -95,10 +95,30 @@ def pick_class(key):
 
 @dnd_chargen.route('/pick_class/<key>', methods=["POST"])
 def do_pick_class(key):
+    stat_translation = {
+        "str": "strength",
+        "dex": "dexterity",
+        "con": "constitution",
+        "int": "intelligence",
+        "wis": "wisdom",
+        "chr": "charisma"
+    }
+
     character = load_character(key)
 
     if character["state"] != "has-stats":
         return flask.redirect(flask.url_for("dnd_chargen.hub", key=key))
+
+    if flask.request.form["left-stat"] in ["str", "dex", "con", "int", "wis", "chr"] \
+            and flask.request.form["right-stat"] in ["str", "dex", "con", "int", "wis", "chr"] \
+            and flask.request.form["left-stat"] != flask.request.form["right-stat"]:
+
+        left_key = stat_translation[flask.request.form["left-stat"]]
+        right_key = stat_translation[flask.request.form["right-stat"]]
+
+        swap = character[left_key]
+        character[left_key] = character[right_key]
+        character[right_key] = swap
 
     character.set_class(flask.request.form["character_class"])
     character.set_saves()

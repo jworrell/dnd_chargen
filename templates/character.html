@@ -47,14 +47,12 @@
         <tr>
             <td>WIS</td>
             <td>{{ render_stat(character.wisdom) }} ({{ character.get_mod_text("wisdom") }})</td>
-            <td>Death Ray or Poison</td>
-            <td>{{ render_stat(character.poison) }}</td>
+            <td>Rods, Staves, or Spells</td>
+            <td>{{ render_stat(character.spells) }}</td>
         </tr>
         <tr>
             <td>CHR</td>
             <td>{{ render_stat(character.charisma) }} ({{ character.get_mod_text("charisma") }})</td>
-            <td>Rods, Staves, or Spells</td>
-            <td>{{ render_stat(character.spells) }}</td>
         </tr>
     </table>
     <table border="1">
