@@ -9,7 +9,11 @@
         {% for character, link in items %}
             <tr>
                 <td>{{ character.state }}</td>
+                <td>{{ render_time(character.time_stamp) }}</td>
+                <td>{{ character.player_name }}</td>
                 <td>{{ character.name }}</td>
+                <td>{{ character.class }}</td>
+                <td>{{ character.hit_points }}</td>
                 <td><a href="{{ link }}">View Sheet</a></td>
             </tr>
         {% endfor %}

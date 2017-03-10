@@ -1,3 +1,4 @@
+import datetime
 import json
 import os
 import uuid
@@ -30,7 +31,13 @@ def utility_processor():
 
         return stat
 
-    return dict(render_stat=render_stat)
+    def render_time(time):
+        return datetime.datetime.fromtimestamp(time).strftime('%Y-%m-%d %H:%M:%S')
+
+    return {
+        "render_stat": render_stat,
+        "render_time": render_time,
+    }
 
 
 @dnd_chargen.route('/')
@@ -158,11 +165,16 @@ def do_roll_hp_and_gear(key):
     return flask.redirect(flask.url_for("dnd_chargen.hub", key=key))
 
 
-@dnd_chargen.route('/make_character')
+@dnd_chargen.route('/make_character', methods=["GET"])
 def make_character():
+    return flask.render_template("make_character.html")
+
+
+@dnd_chargen.route('/make_character', methods=["POST"])
+def do_make_character():
     character_key = str(uuid.uuid4())
 
-    new_character = character_module.Character()
+    new_character = character_module.Character(player_name=flask.request.form["player_name"])
     save_character(new_character, character_key)
 
     return flask.redirect(flask.url_for("dnd_chargen.hub", key=character_key))

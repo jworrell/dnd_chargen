@@ -1,6 +1,7 @@
 import json
 import os
 import os.path
+import time
 
 import dice
 import equipment
@@ -9,8 +10,8 @@ config = json.load(open(os.environ["CHARGEN_CONFIG"]))
 
 
 class Character(dict):
-    VALID_CLASSES = set(["cleric", "fighter", "magic-user", "thief", "elf", "dwarf", "halfling"])
-    VALID_STATES = set(["new", "has-stats", "has-class", "done"])
+    VALID_CLASSES = {"cleric", "fighter", "magic-user", "thief", "elf", "dwarf", "halfling"}
+    VALID_STATES = {"new", "has-stats", "has-class", "done"}
 
     HP_DICE = {
         "cleric": 6,
@@ -50,8 +51,12 @@ class Character(dict):
 
         return Character.from_json(json_str)
 
-    def __init__(self):
+    def __init__(self, player_name=None):
+        super().__init__()
+
+        self.set_player_name(player_name)
         self.set_state("new")
+        self.set_time_stamp()
 
     def to_json(self):
         return json.dumps(self, sort_keys=True, indent=4, separators=(',', ': '))
@@ -71,6 +76,12 @@ class Character(dict):
         self["intelligence"] = dice.roll(3, 6)
         self["wisdom"] = dice.roll(3, 6)
         self["charisma"] = dice.roll(3, 6)
+
+    def set_time_stamp(self):
+        self["time_stamp"] = int(time.time())
+
+    def set_player_name(self, player_name):
+        self["player_name"] = player_name
 
     def set_class(self, class_name):
         if class_name not in Character.VALID_CLASSES:
